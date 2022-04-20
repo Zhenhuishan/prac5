@@ -28,10 +28,10 @@ int main()
     FilterGeneric *ftdp=new FilterForTwoDigitPositive();
     ReduceGeneric *rm=new ReduceMinimum();
     ReduceGeneric *rgcd=new ReduceGCD();
-    // int ary[20]={6, -11, 53, -16, 73, 128, 105, 104, -71, -179, 102, 12, 21, -145, -99, 199,-156, -186, 43, -189};
+    int ary[20]={6, -11, 53, -16, 73, 128, 105, 104, -71, -179, 102, 12, 21, -145, -99, 199,-156, -186, 43, -189};
     // int ary[20]={-5, -24, -123, -81, 200, 157, 84, 67, -83, -60, -72, 192, -25, -20, -50, -181,-70, -15, -108, -123};
     // int ary[20]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-    int ary[3]={15,45,10};
+    // int ary[3]={15,45,10};
     vector<int> v(ary,ary+sizeof(ary));
     
     v=mt->map(v);

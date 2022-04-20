@@ -18,8 +18,9 @@ int ReduceGeneric::reduce(vector<int> v){
         return 0;
     }
     else{   
-        v[count-1]=binaryOperator(v[count-1],v[count-2]);
+        v[count-2]=binaryOperator(v[count-1],v[count-2]);
         v.pop_back();
+        
         return reduce(v);
     }
 }
