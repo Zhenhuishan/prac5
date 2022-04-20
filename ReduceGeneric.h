@@ -8,7 +8,7 @@ class ReduceGeneric
 private:
     virtual int binaryOperator(int x,int y)=0;
     // std::vector<int> vec;
-    int result;   
+    // int result;   
     int count;
 public:
     ReduceGeneric(/* args */);
