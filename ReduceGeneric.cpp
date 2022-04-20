@@ -14,7 +14,10 @@ int ReduceGeneric::reduce(vector<int> v){
     if(count==1){
         return result;
     }
-    else{  
+    else if(count==0){
+        return 0;
+    }
+    else{   
         v[count-1]=binaryOperator(v[count-1],v[count-2]);
         result=v[count-1];
         v.pop_back();
